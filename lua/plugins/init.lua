@@ -15,8 +15,5 @@ return {
     opts = require "configs.treesitter",
   },
 
-  {
-    "saghen/blink.cmp",
-    opts = require "configs.blink",
-  },
+  { import = "nvchad.blink.lazyspec" },
 }
