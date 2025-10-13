@@ -7,9 +7,7 @@ return {
 
   {
     "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
-    end,
+    opts = require "configs.lspconfig",
   },
 
   {
@@ -17,5 +15,8 @@ return {
     opts = require "configs.treesitter",
   },
 
-  { import = "nvchad.blink.lazyspec" },
+  {
+    "saghen/blink.cmp",
+    opts = require "configs.blink",
+  },
 }
