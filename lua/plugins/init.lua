@@ -15,5 +15,5 @@ return {
     opts = require "configs.treesitter",
   },
 
-  { import = "nvchad.blink.lazyspec" },
+  -- { import = "nvchad.blink.lazyspec" },
 }
