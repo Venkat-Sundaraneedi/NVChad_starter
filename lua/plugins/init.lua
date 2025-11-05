@@ -15,5 +15,16 @@ return {
     opts = require "configs.treesitter",
   },
 
-  -- { import = "nvchad.blink.lazyspec" },
+  {
+    "saghen/blink.cmp",
+    version = "1.*",
+    event = { "InsertEnter", "CmdLineEnter" },
+    dependencies = {
+      "rafamadriz/friendly-snippets",
+    },
+    opts = function()
+      return require "configs.blink"
+    end,
+    opts_extend = { "sources.default" },
+  },
 }
